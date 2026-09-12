@@ -1,0 +1,1 @@
+@media(prefers-reduced-motion:no-preference){.card,.btn,.nav-links{transition:all .25s ease}.card:hover{transition-duration:.25s}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
