@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Give Today | Help Empower Refugees</title>
+<meta name="description" content="Support Help Empower Refugees with a gift toward skills development, livelihoods and community programs in Kalobeyei.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+<style>
+  .amount-options{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
+  .amount-btn{border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:.6rem 1.3rem;font-weight:700;cursor:pointer;color:var(--dark)}
+  .amount-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+  .method-options{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.25rem}
+  .method-btn{display:flex;flex-direction:column;align-items:center;gap:.4rem;border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:1rem .5rem;cursor:pointer;color:var(--muted);font-weight:600;font-size:.85rem}
+  .method-btn.active{border-color:var(--primary);color:var(--primary);background:#ecfdf5}
+  .method-btn .glyph{font-size:1.4rem}
+  .give-note{font-size:.82rem;color:var(--muted);margin-top:.75rem}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">&#10022;</span><span>HER<small>HELP EMPOWER REFUGEES</small></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
+<nav class="nav-links" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="impact.html">Impact</a>
+<a href="get-involved.html">Get Involved</a>
+<a href="news.html">News</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="btn btn-accent nav-give" href="give.html">Give Today</a>
+</div>
+</header>
+
+<main id="main">
+<section class="page-hero">
+<div class="container">
+<p class="kicker" style="color:#a7f3d0">Get involved &middot; Give today</p>
+<h1>Make a gift</h1>
+<p>Help strengthen opportunities for women, youth and communities working toward greater self-reliance.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container form-card">
+<form id="give-form" data-emailjs-form data-subject-template="Donation Request &mdash; {name}" data-success-message="Thank you! We've received your donation request and will follow up by email with next steps to complete your gift.">
+<input type="hidden" name="subject" value="Donation Request">
+<input type="hidden" name="form_type" value="Donation Request">
+<input type="hidden" name="amount" id="give-amount-field" value="50">
+<input type="hidden" name="payment_method" id="give-method-field" value="Card">
+
+<div class="field">
+<label>Choose an amount (USD)</label>
+<div class="amount-options" id="amount-options">
+<button type="button" class="amount-btn" data-amount="25">$25</button>
+<button type="button" class="amount-btn active" data-amount="50">$50</button>
+<button type="button" class="amount-btn" data-amount="100">$100</button>
+<button type="button" class="amount-btn" data-amount="250">$250</button>
+<button type="button" class="amount-btn" data-amount="custom">Custom</button>
+</div>
+<input type="number" min="1" id="give-custom-amount" placeholder="Enter amount in USD" style="display:none;width:100%;border:1px solid #cbd5e1;border-radius:8px;padding:.7rem;margin-top:.25rem">
+</div>
+
+<div class="field">
+<label>Payment method</label>
+<div class="method-options" id="method-options">
+<button type="button" class="method-btn active" data-method="Card"><span class="glyph">&#9724;</span>Card</button>
+<button type="button" class="method-btn" data-method="M-Pesa"><span class="glyph">&#9679;</span>M-Pesa</button>
+<button type="button" class="method-btn" data-method="Bank transfer"><span class="glyph">&#9650;</span>Bank transfer</button>
+</div>
+</div>
+
+<div class="field">
+<label for="g-name">Name</label>
+<input id="g-name" name="name" type="text" required placeholder="Your full name">
+</div>
+<div class="field">
+<label for="g-email">Email</label>
+<input id="g-email" name="email" type="email" required placeholder="you@example.com">
+</div>
+<div class="field">
+<label for="g-message">Message (optional)</label>
+<textarea id="g-message" name="message" rows="3" placeholder="Anything you'd like us to know"></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary" style="width:100%" id="give-submit-btn">Continue with $50 via Card</button>
+<p class="give-note">We don't process live card, M-Pesa or bank payments on this page yet. Submitting sends your request directly to HER, and we'll follow up by email with secure next steps to complete your gift.</p>
+<p class="form-message" role="status" aria-live="polite"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<h3>HER</h3>
+<p>Educate. Innovate. Inspire Self-Reliance.</p>
+<p>Website prototype</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<a href="about.html">About</a><br>
+<a href="programs.html">Programs</a><br>
+<a href="impact.html">Impact</a><br>
+<a href="get-involved.html">Get Involved</a><br>
+<a href="contact.html">Contact</a>
+</div>
+<div>
+<h3>Contact</h3>
+<p>+254 711 942 122<br>info.helpempowerrefugees@gmail.com<br>Kalobeyei Village 2, Turkana West, Kenya</p>
+</div>
+</div>
+<div class="container footer-bottom">&copy; 2026 Help Empower Refugees (HER). All rights reserved.</div>
+</footer>
+
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/emailjs-forms.js"></script>
+<script>
+(function(){
+  var amountBtns = document.querySelectorAll('#amount-options .amount-btn');
+  var customInput = document.getElementById('give-custom-amount');
+  var amountField = document.getElementById('give-amount-field');
+  var methodBtns = document.querySelectorAll('#method-options .method-btn');
+  var methodField = document.getElementById('give-method-field');
+  var submitBtn = document.getElementById('give-submit-btn');
+  var currentAmount = '50';
+  var currentMethod = 'Card';
+
+  function updateSubmitLabel(){
+    var amt = currentAmount === 'custom' ? (customInput.value || '0') : currentAmount;
+    submitBtn.textContent = 'Continue with $' + amt + ' via ' + currentMethod;
+    amountField.value = amt;
+  }
+
+  amountBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      amountBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentAmount = btn.dataset.amount;
+      if (currentAmount === 'custom') {
+        customInput.style.display = 'block';
+        customInput.focus();
+      } else {
+        customInput.style.display = 'none';
+      }
+      updateSubmitLabel();
+    });
+  });
+
+  customInput.addEventListener('input', updateSubmitLabel);
+
+  methodBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      methodBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentMethod = btn.dataset.method;
+      methodField.value = currentMethod;
+      updateSubmitLabel();
+    });
+  });
+})();
+</script>
+</body>
+</html>

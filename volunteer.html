@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact | Help Empower Refugees</title>
-<meta name="description" content="Contact Help Empower Refugees (HER) in Kalobeyei Integrated Settlement, Turkana County, Kenya.">
+<title>Volunteer | Help Empower Refugees</title>
+<meta name="description" content="Volunteer your skills and time with Help Empower Refugees in Kalobeyei, Turkana County.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -29,61 +29,57 @@
 <a class="btn btn-accent nav-give" href="give.html">Give Today</a>
 </div>
 </header>
-
 <main id="main">
 <section class="page-hero">
 <div class="container">
-<p class="kicker" style="color:#a7f3d0">Contact</p>
-<h1>We'd love to hear from you</h1>
-<p>Reach out to partner, visit, or learn more about our on-the-ground work in Kalobeyei.</p>
+<p class="kicker" style="color:#a7f3d0">Get involved &middot; Volunteer</p>
+<h1>Volunteer with HER</h1>
+<p>Share your skills, time and experience to support community-led initiatives in Kalobeyei.</p>
 </div>
 </section>
-
 <section class="section">
-<div class="container grid cols-2">
-<div>
-<p class="kicker">Get in touch</p>
-<h2>Connect with our team</h2>
-<p style="color:var(--muted);margin-bottom:24px;">Connect directly with our operations team in Kalobeyei Integrated Settlement.</p>
-
-<div class="card" style="margin-bottom:16px;display:flex;align-items:center;gap:16px;">
-<div class="icon">&#9742;</div>
-<div><strong style="display:block;color:var(--dark);">Phone</strong><a href="tel:+254711942122" style="color:var(--muted);">+254 711 942 122</a></div>
-</div>
-<div class="card" style="margin-bottom:16px;display:flex;align-items:center;gap:16px;">
-<div class="icon">&#9993;</div>
-<div><strong style="display:block;color:var(--dark);">Email</strong><a href="mailto:info.helpempowerrefugees@gmail.com" style="color:var(--muted);word-break:break-all;">info.helpempowerrefugees@gmail.com</a></div>
-</div>
-<div class="card" style="display:flex;align-items:center;gap:16px;">
-<div class="icon">&#8982;</div>
-<div><strong style="display:block;color:var(--dark);">Address</strong><span style="color:var(--muted);">Kalobeyei Village 2, Turkana West, Kenya</span></div>
-</div>
-</div>
-
-<div class="form-card" style="margin:0;">
-<form data-emailjs-form data-subject-template="Website Contact Form &mdash; {name}" data-success-message="Message sent — thank you! We'll get back to you soon.">
-<input type="hidden" name="subject" value="Website Contact Form">
-<input type="hidden" name="form_type" value="Contact Form">
+<div class="container form-card">
+<form data-emailjs-form data-subject-template="Volunteer Application &mdash; {name}" data-success-message="Thank you for applying to volunteer! We'll be in touch soon.">
+<input type="hidden" name="subject" value="Volunteer Application">
+<input type="hidden" name="form_type" value="Volunteer Application">
 <div class="field">
-<label for="c-name">Name</label>
-<input id="c-name" name="name" type="text" required>
+<label for="v-name">Full name</label>
+<input id="v-name" name="name" type="text" required placeholder="Your full name">
 </div>
 <div class="field">
-<label for="c-email">Email</label>
-<input id="c-email" name="email" type="email" required>
+<label for="v-email">Email</label>
+<input id="v-email" name="email" type="email" required placeholder="you@example.com">
 </div>
 <div class="field">
-<label for="c-message">Message</label>
-<textarea id="c-message" name="message" rows="4" required></textarea>
+<label for="v-phone">Phone (optional)</label>
+<input id="v-phone" name="phone" type="tel" placeholder="+254 7...">
 </div>
-<button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+<div class="field">
+<label for="v-skills">Area of interest / skills</label>
+<select id="v-skills" name="skills" required>
+<option value="" disabled selected>Select an area</option>
+<option>Digital skills / media training</option>
+<option>Poultry &amp; agriculture</option>
+<option>SRHR / health education</option>
+<option>Climate &amp; environment</option>
+<option>Community outreach</option>
+<option>General / not sure yet</option>
+</select>
+</div>
+<div class="field">
+<label for="v-availability">Availability (optional)</label>
+<input id="v-availability" name="availability" type="text" placeholder="e.g. weekends, remote, 2 days a week">
+</div>
+<div class="field">
+<label for="v-message">Tell us about yourself</label>
+<textarea id="v-message" name="message" rows="5" required placeholder="Your experience and why you want to volunteer with HER..."></textarea>
+</div>
+<button type="submit" class="btn btn-primary" style="width:100%">Submit volunteer application</button>
 <p class="form-message" role="status" aria-live="polite"></p>
 </form>
 </div>
-</div>
 </section>
 </main>
-
 <footer class="site-footer">
 <div class="container footer-grid">
 <div>
@@ -96,7 +92,8 @@
 <a href="about.html">About</a><br>
 <a href="programs.html">Programs</a><br>
 <a href="impact.html">Impact</a><br>
-<a href="get-involved.html">Get Involved</a>
+<a href="get-involved.html">Get Involved</a><br>
+<a href="contact.html">Contact</a>
 </div>
 <div>
 <h3>Contact</h3>
@@ -105,9 +102,10 @@
 </div>
 <div class="container footer-bottom">&copy; 2026 Help Empower Refugees (HER). All rights reserved.</div>
 </footer>
-
 <script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/emailjs-forms.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support a Program | Help Empower Refugees</title>
+<meta name="description" content="Support a specific Help Empower Refugees program in digital skills, livelihoods, SRHR, climate or community development.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">&#10022;</span><span>HER<small>HELP EMPOWER REFUGEES</small></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
+<nav class="nav-links" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="impact.html">Impact</a>
+<a href="get-involved.html">Get Involved</a>
+<a href="news.html">News</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="btn btn-accent nav-give" href="give.html">Give Today</a>
+</div>
+</header>
+<main id="main">
+<section class="page-hero">
+<div class="container">
+<p class="kicker" style="color:#a7f3d0">Get involved &middot; Support a program</p>
+<h1>Support a HER program</h1>
+<p>Support practical initiatives in digital skills, livelihoods, SRHR, climate action and community development.</p>
+</div>
+</section>
+<section class="section">
+<div class="container form-card">
+<form data-emailjs-form data-subject-template="Program Support Inquiry &mdash; {name}" data-success-message="Thank you! We've received your inquiry and will follow up soon.">
+<input type="hidden" name="subject" value="Program Support Inquiry">
+<input type="hidden" name="form_type" value="Program Support Inquiry">
+<div class="field">
+<label for="s-name">Full name</label>
+<input id="s-name" name="name" type="text" required placeholder="Your full name">
+</div>
+<div class="field">
+<label for="s-email">Email</label>
+<input id="s-email" name="email" type="email" required placeholder="you@example.com">
+</div>
+<div class="field">
+<label for="s-org">Organization (optional)</label>
+<input id="s-org" name="organization" type="text" placeholder="If applicable">
+</div>
+<div class="field">
+<label for="s-program">Program you would like to support</label>
+<select id="s-program" name="program" required>
+<option value="" disabled selected>Select a program</option>
+<option>Digital Literacy</option>
+<option>Poultry Farming &amp; Egg Incubation</option>
+<option>Sexual and Reproductive Health and Rights (SRHR)</option>
+<option>Climate &amp; Environmental Action</option>
+<option>Community Development &amp; Entrepreneurship</option>
+</select>
+</div>
+<div class="field">
+<label for="s-support-type">Type of support</label>
+<select id="s-support-type" name="support_type" required>
+<option value="" disabled selected>Select a type</option>
+<option>Funding</option>
+<option>Equipment / materials</option>
+<option>Skills / training delivery</option>
+<option>Other</option>
+</select>
+</div>
+<div class="field">
+<label for="s-message">Message</label>
+<textarea id="s-message" name="message" rows="5" required placeholder="Tell us more about the support you can offer..."></textarea>
+</div>
+<button type="submit" class="btn btn-primary" style="width:100%">Send inquiry</button>
+<p class="form-message" role="status" aria-live="polite"></p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<h3>HER</h3>
+<p>Educate. Innovate. Inspire Self-Reliance.</p>
+<p>Website prototype</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<a href="about.html">About</a><br>
+<a href="programs.html">Programs</a><br>
+<a href="impact.html">Impact</a><br>
+<a href="get-involved.html">Get Involved</a><br>
+<a href="contact.html">Contact</a>
+</div>
+<div>
+<h3>Contact</h3>
+<p>+254 711 942 122<br>info.helpempowerrefugees@gmail.com<br>Kalobeyei Village 2, Turkana West, Kenya</p>
+</div>
+</div>
+<div class="container footer-bottom">&copy; 2026 Help Empower Refugees (HER). All rights reserved.</div>
+</footer>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/emailjs-forms.js"></script>
+
+</body>
+</html>
